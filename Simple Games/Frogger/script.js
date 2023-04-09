@@ -16,19 +16,19 @@ function moveFrog(e) {
     switch (e.key) {
         case "ArrowLeft":
             console.log("Move Left");
-            currentIndex -= 1;
+            if (currentIndex % width !== 0) currentIndex -= 1; //*Understand all Logic
             break;
         case "ArrowRight":
             console.log("Move Right");
-            currentIndex += 1;
+            if (currentIndex % width < width - 1) currentIndex += 1;
             break;
         case "ArrowUp":
             console.log("Move Up");
-            currentIndex -= width;
+            if (currentIndex - width >= 0) currentIndex -= width;
             break;
         case "ArrowDown":
             console.log("Move Down");
-            currentIndex += width;
+            if (currentIndex + width < width * width) currentIndex += width;
             break;
     }
     squares[currentIndex].classList.add("frog");
