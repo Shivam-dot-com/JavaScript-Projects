@@ -11,6 +11,8 @@ console.log(squares); // Good help in counting like array, check console
 let currentIndex = 76; // Starting block
 let width = 9;
 let timerID;
+let outcomeTimerID;
+let currentTime = 20;
 
 function moveFrog(e) {
     // console.log(e); // * So much Information by this Statement
@@ -40,11 +42,17 @@ function moveFrog(e) {
 document.addEventListener("keyup", moveFrog);
 
 function autoMoveElements() {
+    currentTime--;
+    timeLeftDisplay.textContent = currentTime;
+
     logsLeft.forEach((logLeft) => moveLogLeft(logLeft));
     logsRight.forEach((logRight) => moveLogRight(logRight));
     carsLeft.forEach((carLeft) => moveCarLeft(carLeft));
     carsRight.forEach((carRight) => moveCarRight(carRight));
     // console.log("Moving");
+}
+
+function checkOutcomes() {
     lose();
     win();
 }
@@ -136,7 +144,8 @@ function lose() {
     if (
         squares[currentIndex].classList.contains("c1") ||
         squares[currentIndex].classList.contains("l4") ||
-        squares[currentIndex].classList.contains("l5")
+        squares[currentIndex].classList.contains("l5") ||
+        currentTime <= 0
     ) {
         resultDisplay.textContent = "You Lose!!";
         clearInterval(timerID);
@@ -153,4 +162,19 @@ function win() {
     }
 }
 
-timerID = setInterval(autoMoveElements, 1000);
+startPauseButton.addEventListener("click", () => {
+    console.log("This is function");
+    if (timerID) {
+        clearInterval(timerID);
+        clearInterval(outcomeTimerID);
+        outcomeTimerID = null;
+        timerID = null;
+        document.removeEventListener("keyup", moveFrog);
+    } else {
+        timerID = setInterval(autoMoveElements, 1000);
+        outcomeTimerID = setInterval(checkOutcomes, 50);
+        document.addEventListener("keyup", moveFrog);
+    }
+});
+
+// timerID = setInterval(autoMoveElements, 1000);
