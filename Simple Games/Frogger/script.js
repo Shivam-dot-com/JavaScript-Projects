@@ -6,14 +6,11 @@ const logsLeft = document.querySelectorAll(".log-left");
 const logsRight = document.querySelectorAll(".log-right");
 const carsLeft = document.querySelectorAll(".car-left");
 const carsRight = document.querySelectorAll(".car-right");
-console.log(carsLeft);
-console.log(carsRight);
 
+console.log(squares); // Good help in counting like array, check console
+let currentIndex = 76; // Starting block
 let width = 9;
-
-console.log(squares); // TODO Good help in counting like array, check console
-
-let currentIndex = 76; //Starting block
+let timerID;
 
 function moveFrog(e) {
     // console.log(e); // * So much Information by this Statement
@@ -48,6 +45,8 @@ function autoMoveElements() {
     carsLeft.forEach((carLeft) => moveCarLeft(carLeft));
     carsRight.forEach((carRight) => moveCarRight(carRight));
     // console.log("Moving");
+    lose();
+    win();
 }
 
 function moveLogLeft(logLeft) {
@@ -133,4 +132,25 @@ function moveCarRight(carRight) {
     }
 }
 
-setInterval(autoMoveElements, 1000);
+function lose() {
+    if (
+        squares[currentIndex].classList.contains("c1") ||
+        squares[currentIndex].classList.contains("l4") ||
+        squares[currentIndex].classList.contains("l5")
+    ) {
+        resultDisplay.textContent = "You Lose!!";
+        clearInterval(timerID);
+        squares[currentIndex].classList.remove("frog");
+        document.removeEventListener("keyup", moveFrog);
+    }
+}
+
+function win() {
+    if (squares[currentIndex].classList.contains("ending-block")) {
+        resultDisplay.textContent = "You Win!!";
+        clearInterval(timerID);
+        document.removeEventListener("keyup", moveFrog);
+    }
+}
+
+timerID = setInterval(autoMoveElements, 1000);
