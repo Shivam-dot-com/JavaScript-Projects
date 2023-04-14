@@ -1,0 +1,26 @@
+* {
+    margin-top: 73px;
+}
+
+body {
+    background-color: purple;
+    display: flex;
+    align-items : center;
+    justify-content: center;
+}
+
+.container {}
+
+.top {
+    display: flex;
+    align-items: center;    
+    gap: 50px;
+}
+
+.arrow {
+    height: 150px;
+}
+
+.left {
+    transform: rotate(180deg);
+}
