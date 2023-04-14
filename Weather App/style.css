@@ -30,7 +30,7 @@ body {
     border-radius: 25px;
     height: 30px;
     width: 80%;
-    background-color: rgb(27, 26, 26);
+    background-color: rgba(27, 25, 25, 0.185);
     border: none;
     padding: 10px;
     margin: 5px 8px;
@@ -55,4 +55,17 @@ button:hover {
     background-color: rgb(85, 78, 78);
 }
 
+h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
 
