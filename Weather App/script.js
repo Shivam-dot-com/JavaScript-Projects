@@ -25,6 +25,8 @@ let weather = {
             "Humidity: " + humidity + "%";
         document.querySelector(".wind").textContent =
             "Wind Speed: " + speed + "km/h";
+        document.querySelector(".weather").classList.remove("loading");
+        document.body.style.backgroundImage = "url('')"
     },
     search: function () {
         this.fetchWeather(document.querySelector(".search-bar").value);
@@ -42,3 +44,5 @@ document
             weather.search();
         }
     });
+
+weather.fetchWeather("Delhi");

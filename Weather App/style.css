@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;  
+    font-family: 'Open Sans', sans-serif; 
     background: url('img.avif') no-repeat;
     background-size: cover;
 }
@@ -69,3 +69,17 @@ h1.temp {
     margin-left: 8px;
 }
 
+.weather.loading {
+    visibility: hidden;
+    max-height: 15px;
+    position: relative;
+}
+
+.weather.loading::after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
