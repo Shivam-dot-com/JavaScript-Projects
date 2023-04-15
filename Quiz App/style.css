@@ -14,9 +14,9 @@ body {
 }
 
 .game{
-    display: none;
+    display: block;
 }
-/* Comment this */
+/* Comment this Game */
 
 .content{
     padding: 50px;
