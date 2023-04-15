@@ -38,6 +38,7 @@ body {
 
 .slider {
     display: flex;
+    transition: all 1s ease;
 }
 
 .image {
@@ -53,7 +54,7 @@ body {
 
 .button {
     width: 15px;
-    height: 15px;
+    height: 15px;   
     border-radius: 50%;
     border: 1px solid white;
 }
