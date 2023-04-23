@@ -4,6 +4,7 @@
     border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
+    transition: all 0.5ms;
 }
 
 .grid div {
