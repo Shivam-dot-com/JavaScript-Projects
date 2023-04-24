@@ -32,7 +32,7 @@ const reviews = [
 // *Note : Ajax is used to request HTTP requests from a server.
 
 // Select Items
-const img = document.querySelectorAll("#person-img");
+const img = document.querySelector("#person-img");
 const author = document.querySelector("#author");
 const job = document.querySelector("#job");
 const info = document.querySelector("#info");
@@ -42,7 +42,7 @@ const nextBtn = document.querySelector(".next-btn");
 const randomBtn = document.querySelector(".random-btn");
 
 // Set Starting Items
-let currentItem = 1;
+let currentItem = 0;
 
 // Load Initial Item
 window.addEventListener("DOMContentLoaded", function () {
@@ -53,8 +53,25 @@ window.addEventListener("DOMContentLoaded", function () {
 function showPerson(person) {
     const item = reviews[person];
     img.src = item.img;
-    console.log(`🚀 ~ file: script.js:56 ~ showPerson ~ src:`, img.src)
     author.textContent = item.name;
     job.textContent = item.job;
     info.textContent = item.text;
 }
+
+// Show next person
+nextBtn.addEventListener("click", function () {
+    currentItem++;
+    if (currentItem > reviews.length - 1) {
+        currentItem = 0;
+    }
+    showPerson(currentItem);
+});
+
+// Show previous person
+prevBtn.addEventListener("click", function () {
+    currentItem--;
+    if (currentItem < 0) {
+        currentItem = reviews.length - 1;
+    }
+    showPerson(currentItem);
+});
