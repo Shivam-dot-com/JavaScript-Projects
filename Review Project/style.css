@@ -158,8 +158,8 @@ main {
 }
 .underline {
     height: 0.25rem;
-    width: 5rem;
-    background: var(--clr-primary-5);
+    width: 30%;
+    background: #eab308;
     margin-left: auto;
     margin-right: auto;
 }
@@ -248,16 +248,16 @@ main {
 }
 .random-btn {
     margin-top: 0.5rem;
-    background: var(--clr-primary-10);
-    color: var(--clr-primary-5);
+    background: #111827;
+    color: #f1f5f9;
     padding: 0.25rem 0.5rem;
     text-transform: capitalize;
-    border-radius: var(--radius);
+    border-radius: 5px;
     transition: var(--transition);
-    border-color: var(--clr-primary-5);
     cursor: pointer;
 }
 .random-btn:hover {
-    background: var(--clr-primary-5);
-    color: var(--clr-primary-1);
+    background-color: #18181b;
+    color:#67e8f9;
+    transform: translate(-2px,-2px);
 }

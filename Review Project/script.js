@@ -41,7 +41,7 @@ const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 const randomBtn = document.querySelector(".random-btn");
 
-// Set Starting Items
+// Set Starting Item
 let currentItem = 0;
 
 // Load Initial Item
@@ -73,5 +73,11 @@ prevBtn.addEventListener("click", function () {
     if (currentItem < 0) {
         currentItem = reviews.length - 1;
     }
+    showPerson(currentItem);
+});
+
+// Random Person
+randomBtn.addEventListener("click", () => {
+    currentItem = Math.floor(Math.random() * reviews.length);
     showPerson(currentItem);
 });
