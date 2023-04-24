@@ -1,16 +1,7 @@
-/*
-=============== 
-Fonts
-===============
-*/
+/* Fonts */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
-/*
-=============== 
-Variables
-===============
-*/
-
+/* Variables */
 :root {
     /* dark shades of primary color*/
     --clr-primary-1: hsl(205, 86%, 17%);
@@ -55,12 +46,7 @@ Variables
     --fixed-width: 620px;
 }
 
-/*
-=============== 
-Global Styles
-===============
-*/
-
+/* Global Style */
 *,
 ::after,
 ::before {
@@ -239,7 +225,7 @@ Modal
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(73, 166, 233, 0.5);
+    background: rgba(73, 166, 233,1);
     display: grid;
     place-items: center;
     transition: var(--transition);
@@ -257,7 +243,7 @@ Modal
     background: var(--clr-white);
     border-radius: var(--radius);
     width: 90vw;
-    height: 30vh;
+    height: 85vh;
     max-width: var(--fixed-width);
     text-align: center;
     display: grid;
