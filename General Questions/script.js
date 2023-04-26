@@ -6,6 +6,14 @@ questions.forEach((question) => {
     //! Observe with querySelector we have used question
     // console.log(`🚀 ~ file: script.js:6 ~ questions.forEach ~ btn:`, btn)
     btn.addEventListener("click", () => {
+        // To close opened when other question's button is clicked
+        questions.forEach((item) => { 
+            console.log(item);
+            if (item !== question) { 
+                item.classList.remove('show-text')
+            }
+        })
+
         question.classList.toggle("show-text");
     });
 });
