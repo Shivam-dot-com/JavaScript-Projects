@@ -222,6 +222,10 @@ header {
     z-index: -2;
 }
 
+/* video {
+    pointer-events: none;
+} */
+
 h1 {
     color: var(--clr-white);
 }
