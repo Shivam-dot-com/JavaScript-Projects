@@ -1,16 +1,7 @@
-/*
-=============== 
-Fonts
-===============
-*/
+/* Font Importing */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
-/*
-=============== 
-Variables
-===============
-*/
-
+/* Variables */
 :root {
     /* dark shades of primary color*/
     --clr-primary-1: hsl(205, 86%, 17%);
@@ -54,12 +45,7 @@ Variables
     --fixed-width: 620px;
 }
 
-/*
-=============== 
-Global Styles
-===============
-*/
-
+/* Global Styles */
 *,
 ::after,
 ::before {
@@ -198,11 +184,7 @@ main {
     place-items: center;
 }
 
-/*
-=============== 
-Video
-===============
-*/
+/* Video */
 .preloader {
     position: fixed;
     top: 0;
@@ -286,7 +268,7 @@ h1 {
 }
 
 /* header after */
-/* header::after {
+header::after {
     content: "";
     position: absolute;
     top: 0;
@@ -295,4 +277,4 @@ h1 {
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     z-index: -1;
-} */
+}
