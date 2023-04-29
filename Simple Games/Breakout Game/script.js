@@ -1,4 +1,4 @@
-// TODO declarations
+//  declarations
 const grid = document.querySelector(".grid");
 const scoreDisplay = document.querySelector("#score");
 const blockWidth = 100;
@@ -17,7 +17,7 @@ let currentPosition = userStart;
 const ballStart = [270, 40];
 let ballCurrentPosition = ballStart;
 
-// TODO Create Block class
+//  Create Block class
 class Block {
     constructor(xAxis, yAxis) {
         this.bottomLeft = [xAxis, yAxis];
@@ -58,25 +58,25 @@ function addBlocks() {
 }
 addBlocks();
 
-// TODO draw user
+//  draw user
 function drawUser() {
     user.style.left = currentPosition[0] + "px";
     user.style.bottom = currentPosition[1] + "px";
 }
 
-// TODO draw the ball
+//  draw the ball
 function drawBall() {
     ball.style.left = ballCurrentPosition[0] + "px";
     ball.style.bottom = ballCurrentPosition[1] + "px";
 }
 
-// TODO Add User
+//  Add User
 const user = document.createElement("div");
 user.classList.add("user");
 drawUser();
 grid.appendChild(user);
 
-// TODO Move User
+//  Move User
 function moveUser(e) {
     switch (e.key) {
         case "ArrowLeft":
@@ -96,13 +96,13 @@ function moveUser(e) {
 
 document.addEventListener("keydown", moveUser);
 
-// TODO add ball
+//  add ball
 const ball = document.createElement("div");
 ball.classList.add("ball");
 drawBall();
 grid.appendChild(ball);
 
-// TODO move ball
+//  move ball
 function moveBall() {
     ballCurrentPosition[0] += xDirection;
     ballCurrentPosition[1] += yDirection;
@@ -112,7 +112,7 @@ function moveBall() {
 
 timerId = setInterval(moveBall, 30);
 
-// TODO check for collisions
+//  check for collisions
 function checkForCollisions() {
     // * Check for block collisions
     for (let i = 0; i < blocks.length; i++) {
@@ -165,7 +165,7 @@ function checkForCollisions() {
     }
 }
 
-// TODO Change Direction
+//  Change Direction
 function changeDirection() {
     if (xDirection === 2 && yDirection === 2) {
         yDirection = -2;
