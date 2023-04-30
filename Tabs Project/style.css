@@ -253,6 +253,7 @@ main {
 .tab-btn:hover:not(.active) {
     background: var(--clr-primary-10);
     color: var(--clr-primary-5);
+    transform: translateY(-10px);
 }
 
 .about-content {
