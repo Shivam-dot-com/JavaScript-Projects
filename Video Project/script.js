@@ -10,7 +10,7 @@ btn.addEventListener("click", () => {
         //*Focus on not operator here
         btn.classList.add("slide");
         video.pause();
-        video.controls = "false"
+        video.controls = "false";
     } else {
         btn.classList.remove("slide");
         video.play();
@@ -22,8 +22,21 @@ btn.addEventListener("click", () => {
 /* Adding Pre-loader functionality, using Load Event, it fired when the whole page is loaded best use for Preloader */
 // * The load event is fired when the whole page has loaded, including all dependent resources such as stylesheets and images.
 
-const preloader = document.querySelector('.preloader')
+const preloader = document.querySelector(".preloader");
 
-window.addEventListener('load', () => { 
+const l = "Shivam"
+console.log(l); 
+
+window.addEventListener('load', () => {
     preloader.classList.add('hide-preloader')
 })
+
+// window.on("load", function () {
+//     setTimeout(
+//         (document.getElementsByClassName("preloader__item").style.display =
+//             "none"),
+//         500
+//     );
+//     preloader.classList.add("hide-preloader");
+//     preloader.removeAttribute("z-index");
+// });
