@@ -1,9 +1,10 @@
-/* Fonts */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/* Fonts 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap"); */
 
 /* Variables */
 :root {
-    /* dark shades of primary color*/
+    /* dark shades of primary color 
     --clr-primary-1: hsl(205, 86%, 17%);
     --clr-primary-2: hsl(205, 77%, 27%);
     --clr-primary-3: hsl(205, 72%, 37%);
@@ -47,7 +48,7 @@
 }
 
 /* Globals */
-*,
+/* *,
 ::after,
 ::before {
     margin: 0;
@@ -109,9 +110,9 @@ h4 {
 p {
     margin-bottom: 1.25rem;
     color: var(--clr-grey-5);
-}
-
-@media screen and (min-width: 800px) {
+} */
+/* 
+@media screen and (min-width: 400px) {
     h1 {
         font-size: 4rem;
     }
@@ -138,11 +139,11 @@ p {
     h4 {
         line-height: 1;
     }
-}
+} */
 
 /*  global classes */
 
-.btn {
+/* .btn {
     text-transform: uppercase;
     background: transparent;
     color: var(--clr-black);
@@ -160,10 +161,10 @@ p {
 .btn:hover {
     color: var(--clr-white);
     background: var(--clr-black);
-}
+} */
 
 /* section */
-.section {
+/* .section {
     padding: 5rem 0;
 }
 
@@ -177,10 +178,10 @@ main {
     min-height: 100vh;
     display: grid;
     place-items: center;
-}
+} */
 
 /* Countdown Timer */
-.gift-img {
+/* .gift-img {
     margin-bottom: 2rem;
 }
 
@@ -196,8 +197,8 @@ main {
 .date {
     color: var(--clr-grey-5);
     font-size: 0.85rem;
-}
-
+} */
+/* 
 @media screen and (min-width: 992px) {
     .section-center {
         display: grid;
@@ -242,4 +243,4 @@ main {
     font-size: 2rem;
     margin-bottom: 0.25rem;
     letter-spacing: var(--spacing);
-}
+}  */
