@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: #22223b;
     display: flex;
     align-items: center;
@@ -15,10 +15,10 @@ body {
 
 .game{
     display: block;
-}
+} */
 /* Comment this Game */
 
-.content{
+/* .content{
     padding: 50px;
 }
 
@@ -67,4 +67,4 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     border: none;
-}
+} */
