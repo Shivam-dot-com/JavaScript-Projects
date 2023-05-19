@@ -1,2 +1,3 @@
 # JavaScript-Projects
-Contain small projects to make JavaScript Concepts strong
+
+**Note** : This is Incomplete, Complete this
