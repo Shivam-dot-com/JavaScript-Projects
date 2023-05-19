@@ -22,12 +22,20 @@ const weekdays = [
     "Saturday",
 ];
 
+// *Note : Months are Zero indexed here, 0-Jan, 1-Feb, ...
+
 const giveaway = document.querySelector(".giveaway");
 const deadline = document.querySelector(".deadline");
 const items = document.querySelectorAll(".deadline-format h4");
 
-const futureDate = new Date(2023, 04, 24, 15, 30, 00);
-// *Note : Months are Zero indexed here, 0-Jan, 1-Feb, ...
+// TODO Add date 10 days ahead of a user
+const tempDate = new Date();
+let tempYear = tempDate.getFullYear();
+let tempMonth = tempDate.getMonth();
+let tempDay = tempDate.getDate();
+
+// const futureDate = new Date(2023, 04, 24, 15, 30, 00);
+const futureDate = new Date(tempYear, tempMonth, tempDay + 10, 11, 30, 00);
 
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
@@ -40,7 +48,7 @@ month = months[month];
 
 let weekDay = weekdays[futureDate.getDay()];
 
-giveaway.textContent = `giveaway ends on ${weekDay}, ${date} ${month} ${year} ${hours}:${minutes}`;
+giveaway.textContent = `giveaway ends on ${weekDay}, ${date} ${month} ${year} ${hours}:${minutes}AM`;
 
 // Future time in ms
 const futureTime = futureDate.getTime();
@@ -96,6 +104,9 @@ function getRemainingTime() {
 let countdown = setInterval(getRemainingTime, 1000);
 
 getRemainingTime(); // Imp to invoke this after countdown
+
+// What is user comes after expiring ?
+// Add a function to reset future Date, ahead of 10 days
 
 /* ?Why modulo operator used here?? 
 because I don't care if this gets back, but only remainder. Need more explaination
