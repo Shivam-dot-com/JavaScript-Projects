@@ -82,16 +82,16 @@ const playerHasWon = () => {
 
 const restart = () => {
     spaces.forEach((space, index) => {
-        space[index] = null;
+        spaces[index] = null;
     });
     boxes.forEach((box) => {
         box.innerText = "";
     });
     playText.innerText = `Let's Play!`;
-    currentPlayer = O_Text;
-};
+    currentPlayer = O_Text;     
+};      
 
 restartBtn.addEventListener("click", restart);
 
-restart();
+restart(); 
 drawBoard();
