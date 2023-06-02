@@ -105,9 +105,9 @@ let countdown = setInterval(getRemainingTime, 1000);
 
 getRemainingTime(); // Imp to invoke this after countdown
 
-// What is user comes after expiring ?
+// What if user comes after expiring ?
 // Add a function to reset future Date, ahead of 10 days
 
-/* ?Why modulo operator used here?? 
-because I don't care if this gets back, but only remainder. Need more explaination
+/* Why modulo operator used here?? 
+because I don't care if this gets back, but only remainder(Need more explaination).
 */
