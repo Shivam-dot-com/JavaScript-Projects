@@ -1,17 +1,45 @@
-.grid {
-    width: 610px;
-    height: 610px;
-    display: flex;
-    flex-wrap: wrap;
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+body {
+  background-color: rgb(19, 103, 136);
+  color: black;
+  font-family: "Concert One", cursive;
+}
+body .mole {
+  background-image: url(mole.jpg);
+  background-size: cover;
 }
 
-.square {
-    height: 200px;
-    width: 200px;
-    border: 1px solid black;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.mole {
-    background-image: url(mole.jpg);
-    background-size: cover;
+.container .score-details {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 1.5rem;
 }
+.container .score-details .score,
+.container .score-details .time {
+  display: flex;
+}
+.container .score-details .time {
+  margin-bottom: 20px;
+}
+.container .score-details .score > *,
+.container .score-details .time > * {
+  padding: 5px;
+}
+.container .grid {
+  width: 700px;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .grid .square {
+  height: 230px;
+  width: 229px;
+  border: 2px solid #fefefe;
+}/*# sourceMappingURL=style.css.map */
