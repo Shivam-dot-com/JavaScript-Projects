@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 body {
-    background-color: rgb(19, 103, 136);
+    background-color:#1e293b;
     color: black;
     font-family: 'Concert One', cursive;
 
@@ -21,7 +21,7 @@ body {
         display: flex;
         flex-direction: column;
         color: white;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
 
         .score,
         .time {

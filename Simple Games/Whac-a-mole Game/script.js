@@ -23,7 +23,7 @@ squares.forEach((square) => {
     square.addEventListener("mousedown", () => {
         if (square.id == hitPosition) {
             result++;
-            score.textContent = result;
+            score.textContent = `: ${result}`;
             hitPosition = null;
         }
     });
@@ -32,11 +32,12 @@ squares.forEach((square) => {
 function moveMole() {
     timerId = setInterval(randomSquare, 500);
 }
+
 moveMole();
 
 function countDown() {
     currentTime--;
-    timeLeft.textContent = currentTime;
+    timeLeft.textContent = `: ${currentTime}`;
     if (currentTime == 0) {
         clearInterval(countDownTimeID);
         clearInterval(timerId);
