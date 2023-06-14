@@ -1,5 +1,5 @@
 # JavaScript-Projects
-**Description** : This contains small projects to learn JavaScript. From FreeCodeCamp Youtube Channel [playlist for Games](https://youtu.be/ec8vSKJuZTk) and [playlist for Projects](Link)
+**Description** : This contains small projects to learn JavaScript. From FreeCodeCamp Youtube Channel [Playlist for Games](https://youtu.be/ec8vSKJuZTk) and [Playlist for Projects](https://youtu.be/3PHXvlpOkf4)
 
 ## Simple Games
 - Breakout Game
