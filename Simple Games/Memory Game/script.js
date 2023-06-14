@@ -51,7 +51,7 @@ const cardArray = [
 
 cardArray.sort(() => 0.5 - Math.random()) //For Creating random cards
 
-const gridDisplay = document.querySelector('#grid')
+const gridDisplay = document.querySelector('.grid')
 const resultDisplay = document.querySelector('#result')
 
 let cardsChosen = [];
