@@ -9,14 +9,14 @@
 - Space Invaders
 - Tic Tac Toe
 - Whac-a-mole Game
-<!-- This need to be removed -->
-- Snake Game 
+<!-- Continue... -->
+- Snake Game (In Progress)
 
 
 ## Simple Projects
 - Clock
 - Color Flipper
-- Countdown Giveaway
+- Countdown
 - Form
 - General Questions
 - Image Slider
