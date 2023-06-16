@@ -1,14 +1,11 @@
-/* * Font */
-
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
 /* * Variables */
-
 :root {
 
     --clr-primary-5: hsl(205, 78%, 60%); 
     --clr-grey-5: hsl(210, 22%, 49%); 
-    --clr-grey-10: hsl(210, 36%, 96%); 
+    --clr-grey-10: hsl(206, 33%, 96%); 
     --clr-white: #fff; 
 }
 
