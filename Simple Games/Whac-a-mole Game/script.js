@@ -17,6 +17,7 @@ function randomSquare() {
     randomSquare.classList.add("mole");
 
     hitPosition = randomSquare.id;
+    // console.log(hitPosition);
 }
 
 squares.forEach((square) => {
@@ -24,7 +25,7 @@ squares.forEach((square) => {
         if (square.id == hitPosition) {
             result++;
             score.textContent = `: ${result}`;
-            hitPosition = null;
+            // hitPosition = null;
         }
     });
 });
@@ -38,7 +39,7 @@ moveMole();
 function countDown() {
     currentTime--;
     timeLeft.textContent = `: ${currentTime}`;
-    if (currentTime == 0) {
+    if (currentTime === 0) {
         clearInterval(countDownTimeID);
         clearInterval(timerId);
         alert(`Game Over Your Final Score is ${result}`);

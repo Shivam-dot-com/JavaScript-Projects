@@ -1,30 +1,66 @@
+:root {
+    --bgcolor: #000000;
+    --textColor: #ffffff;
+    --purple: #800080;
+    --green: #008000;
+    --orange: #ffa500;
+    --red: #ff0000;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 90vh;
+    background-color: var(--bgcolor);
+    color: var(--textColor);
+    transition: all 1ms;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* overflow: hidden; */
+}
+
+.container {
+    /* border: 5px solid white; */
+    min-height: 50vh;
+    text-align: center;
+    padding: 0.5rem;
+}
+
 .grid {
-    width: 300px;
-    height: 300px;
-    border: 1px solid black;
+    width: 600px;
+    height: 680px;
+    border: 3px dashed #4CAF50;
     display: flex;
     flex-wrap: wrap;
-    transition: all 0.5ms;
+    padding: 1rem;
+    border-radius: 15px;
 }
 
 .grid div {
-    width: 20px;
-    height: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
 }
 
 .invader {
-    background-color: purple;
-    border-radius: 10px;
+    background-color: var(--purple);
+    border-radius: 50%;
 }
 
 .shooter {
-    background-color: green;
+    background-color: var(--green);
 }
 
 .laser {
-    background-color: orange;
+    background-color: var(--orange);
 }
 
 .boom {
-    background-color: red;
+    background-color: var(--red);
 }
