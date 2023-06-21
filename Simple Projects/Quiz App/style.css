@@ -1,66 +1,70 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 body {
-  background-color: #22223b;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Lato", sans-serif;
+    background-color: #22223b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
 }
 
 .container {
-  width: 800px;
-  height: -moz-fit-content;
-  height: fit-content;
-  background-color: white;
-  position: relative;
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    position: relative;
 }
-.container .game {
-  display: flex;
-  flex-direction: column;
+
+.game{
+    display: block;
 }
-.container .game .content {
-  padding: 50px;
+/* Comment this Game */
+
+.content{
+    padding: 50px;
 }
-.container .game .content .question {
-  font-size: 40px;
+
+.question{
+    font-size: 40px;
 }
-.container .game .content .answer {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #333;
+
+.answer{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
 }
-.container .game .submit {
-  background-color: rgb(8, 238, 180);
-  color: white;
-  font-weight: 700;
-  font-size: 1.5rem;
-  border: none;
-  width: 20%;
-  height: -moz-fit-content;
-  height: fit-content;
-  cursor: pointer;
-  padding: 15px 20px;
-  border-radius: 10px;
-  font-family: inherit;
+
+.submit{
+    background-color: rebeccapurple;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
 }
-.container .result {
-  display: none;
-  padding: 50px;
-  text-align: center;
+
+.result {
+    display: none;
+    padding: 50px;
+    text-align: center;
 }
-.container .result h1 {
-  font-size: 3em;
+
+.result h1{
+    font-size: 50px;
 }
-.container .result .correct {
-  color: green;
+
+.correct{
+    color: green;
 }
-.container .result .wrong {
-  color: red;
+
+.wrong{
+    color: red;
 }
-.container .result .play {
-  color: white;
-  background-color: rebeccapurple;
-  padding: 10px 20px;
-  cursor: pointer;
-  border: none;
-}/*# sourceMappingURL=style.css.map */
+
+.play{
+    color: white;
+    background-color: rebeccapurple;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
