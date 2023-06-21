@@ -1,47 +1,49 @@
-const squares = document.querySelectorAll('.square')
-const mole = document.querySelector('.mole')
+const squares = document.querySelectorAll(".square");
+const mole = document.querySelector(".mole");
 
-const timeLeft = document.querySelector('#time-left')
-const score = document.querySelector('#score')
+const timeLeft = document.querySelector("#time-left");
+const score = document.querySelector("#score");
 
-let result = 0
-let hitPosition
-let currentTime = 60
-let timerId = null
+let result = 0;
+let hitPosition;
+let currentTime = 60;
+let timerId = null;
 
-function randomSquare() { 
-    squares.forEach(square => { 
-        square.classList.remove('mole')
-    })
-    let randomSquare = squares[Math.floor(Math.random() * 9)]
-    randomSquare.classList.add('mole')
+function randomSquare() {
+    squares.forEach((square) => {
+        square.classList.remove("mole");
+    });
+    let randomSquare = squares[Math.floor(Math.random() * 9)];
+    randomSquare.classList.add("mole");
 
-    hitPosition = randomSquare.id
+    hitPosition = randomSquare.id;
+    // console.log(hitPosition);
 }
 
-squares.forEach(square => {
-    square.addEventListener('mousedown', () => {
+squares.forEach((square) => {
+    square.addEventListener("mousedown", () => {
         if (square.id == hitPosition) {
             result++;
-            score.textContent = result
-            hitPosition = null
+            score.textContent = `: ${result}`;
+            // hitPosition = null;
         }
-    })
-})
+    });
+});
 
-function moveMole() { 
-    timerId = setInterval(randomSquare, 500)
+function moveMole() {
+    timerId = setInterval(randomSquare, 500);
 }
-moveMole()
 
-function countDown() { 
+moveMole();
+
+function countDown() {
     currentTime--;
-    timeLeft.textContent = currentTime
-    if (currentTime == 0) {
+    timeLeft.textContent = `: ${currentTime}`;
+    if (currentTime === 0) {
         clearInterval(countDownTimeID);
-        clearInterval(timerId)
-        alert(`Game Over Your Final Score is ${ result }`)
+        clearInterval(timerId);
+        alert(`Game Over Your Final Score is ${result}`);
     }
 }
 
-let countDownTimeID = setInterval(countDown, 1000)
+let countDownTimeID = setInterval(countDown, 1000);

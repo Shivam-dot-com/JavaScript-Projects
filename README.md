@@ -1,6 +1,13 @@
 # JavaScript-Projects
 **Description** : This contains small projects to learn JavaScript. From FreeCodeCamp Youtube Channel [Playlist for Games](https://youtu.be/ec8vSKJuZTk) and [Playlist for Projects](https://youtu.be/3PHXvlpOkf4)
 
+### UI-Updated
+- Memory Game
+- Space Invaders Game
+- Breakout Game
+- Whac-a-Mole Game
+- Tic Tac Toe
+
 ## Simple Games
 - Breakout Game
 - Connect Four 
@@ -11,7 +18,6 @@
 - Whac-a-mole Game
 <!-- Continue... -->
 - Snake Game (In Progress)
-
 
 ## Simple Projects
 - Clock

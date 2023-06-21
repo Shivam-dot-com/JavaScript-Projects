@@ -24,9 +24,6 @@ btn.addEventListener("click", () => {
 
 const preloader = document.querySelector(".preloader");
 
-const l = "Shivam"
-console.log(l); 
-
 window.addEventListener('load', () => {
     preloader.classList.add('hide-preloader')
 })

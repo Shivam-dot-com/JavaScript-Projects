@@ -128,11 +128,11 @@ function checkForCollisions() {
             blocks.splice(i, 1);
             changeDirection();
             score++;
-            scoreDisplay.innerHTML = score;
+            scoreDisplay.innerHTML = `Score : ${score}`;
 
             // * Check for Win
             if (blocks.length === 0) {
-                scoreDisplay.innerHTML = "You Winner";
+                scoreDisplay.innerHTML = "You Won 😍";
                 clearInterval(timerId);
                 document.removeEventListener("keydown", moveUser);
             }
@@ -160,7 +160,7 @@ function checkForCollisions() {
     //! Check for Game Over
     if (ballCurrentPosition[1] <= 0) {
         clearInterval(timerId); //?
-        scoreDisplay.innerHTML = "You loose";
+        scoreDisplay.innerHTML = "You loose, Try Again !!";
         document.removeEventListener("keydown", moveUser);
     }
 }

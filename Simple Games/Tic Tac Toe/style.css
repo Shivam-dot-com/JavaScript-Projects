@@ -1,18 +1,20 @@
 :root {
-    --purple: #3e0249;
+    --white: #ffffff;
+    --purple: #a60dec;
+    --orange: hsl(262, 52%, 47%);
 }
 body {
     margin: 0;
     padding: 0;
-    color: var(--purple);
-    font-family: sans-serif;
+    color: var(--white);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 * {
     box-sizing: border-box;
 }
 
 h1 {
-    font-size: 54px;
+    font-size: 3.375rem;
     text-transform: uppercase;
 }
 
@@ -23,7 +25,7 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background-color: #e78af7; */
+    background-color: black;
 }
 
 #gameboard {
@@ -31,6 +33,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     width: 450px;
+    /* border: 1px groove red; */
 }
 
 .box {
@@ -40,10 +43,11 @@ h1 {
     justify-content: center;
     align-items: center;
     font-size: 150px;
-    color: var(--purple);
+    color: var(--white);
 }
 
 .box:hover {
+    background-color: var(--orange);
     cursor: pointer;
 }
 
@@ -51,10 +55,11 @@ button {
     padding: 10px 20px;
     border-radius: 10px;
     background-color: var(--purple);
-    color: white;
-    border-color: var(--purple);
-    font-size: 18px;
+    color: var(--white);
+    border-color: var(--white);
+    font-size: 1.130em;
     transition: 200ms transform;
+    border: none;
 }
 
 button:hover {
