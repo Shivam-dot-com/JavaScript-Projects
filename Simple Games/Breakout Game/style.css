@@ -1,3 +1,7 @@
+html, body {
+    cursor: url("normal.cur") default;
+}
+
 body {
     display: flex;
     justify-content: center;
