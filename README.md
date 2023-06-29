@@ -1,5 +1,5 @@
 # JavaScript-Projects
-**Description** : This contains small projects to learn JavaScript. From FreeCodeCamp Youtube Channel [Playlist for Games](https://youtu.be/ec8vSKJuZTk) and [Playlist for Projects](https://youtu.be/3PHXvlpOkf4)
+**Description** : This contains projects to by which I learned JavaScript.
 
 ### UI-Updated
 - Memory Game
