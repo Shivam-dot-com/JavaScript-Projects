@@ -3,11 +3,30 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Tetris Game by Shivam" />
-        <link rel="stylesheet" href="style.css">
-        <title>SB | Tetris</title>
+        <meta name="description" content="Tetris Game by Shivam Balmiki" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+        <title>SB | Tetris JS</title>
     </head>
     <body>
-        <div class="container"></div>
+        <div class="grid">
+            <canvas id="board" class="game-board"></canvas>
+            <div class="right-column">
+                <div>
+                    <h1>TETRIS</h1>
+                    <p>score<span id="score">0</span></p>
+                    <p>lines<span id="lines">0</span></p>
+                    <p>levels<span id="levels">0</span></p>
+                    <canvas id="next" class="next"></canvas>
+                </div>  
+                <button onclick="play()" class="play-button">Play</button>
+            </div>
+        </div>
+
+        <!-- !Check this Section -->
+        <script type="text/javascript" src="constants.js"></script>
+        <script type="text/javascript" src="board.js"></script>
+        <script type="text/javascript" src="piece.js"></script>
+        <script type="text/javascript" src="main.js"></script>
     </body>
 </html>

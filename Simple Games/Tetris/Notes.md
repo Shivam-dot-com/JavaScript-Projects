@@ -20,4 +20,15 @@
 - styles.css : all the **beautifying styles** are in here.
 - README.md : markdown **info file** that is the first page in the repository.
 
-## Size & Style
+**Size & Style**
+- Board consists of 10 Cols & 20 Rows
+- Get canvas element and it's 2D context
+  
+**Tetrominos** 
+- Tetris is a shape consisting of four blocks, move as a unit.
+- The names I, J, L, O, S, T, and Z are from the resemblance in their shape.
+
+**Enums**
+- map the keys to the key codes
+- Enum (enumeration) is a special type used to define collections of constants.
+
