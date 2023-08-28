@@ -11,21 +11,21 @@ for (let i = 0; i < length; i++) {
     const div = document.createElement("div");
     div.className = "button";
     bottom.appendChild(div);
-}
+} // This Created Buttons in Bottom
 
 const buttons = document.querySelectorAll(".button");
 buttons[0].style.backgroundColor = "white";
 
 const resetBg = () => {
     buttons.forEach((button) => {
-        button.style.backgroundColor = `transparent`;
+        button.style.backgroundColor = `transparent`; //? Making it Transparent
     });
 };
 
 buttons.forEach((button, i) => {
     button.addEventListener("click", () => {
         resetBg();
-        slider.style.transform = `translateX(-${i * 800}px)`;
+        slider.style.transform = `translateX(-${i * 800}px)`; //Change 800 to Something
         slideNumber = i + 1;
         button.style.backgroundColor = "white";
     });

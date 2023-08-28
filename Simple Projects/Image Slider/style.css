@@ -38,7 +38,7 @@ body {
 
 .slider {
     display: flex;
-    transition: all 1s ease;
+    transition: all 1s cubic-bezier(0, 1.44, 1, 1.02);
 }
 
 .image {
