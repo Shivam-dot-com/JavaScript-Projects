@@ -3,7 +3,6 @@
 Source : [Lama Dev](https://www.youtube.com/watch?v=UCG8JObh0qU)
 
 - Interval is not a function
-
  
 ```
 let i = 0;
