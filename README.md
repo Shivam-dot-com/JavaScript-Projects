@@ -9,15 +9,11 @@
 - Tic Tac Toe
 
 ## Simple Games
-- Breakout Game
-- Connect Four 
+- Connect Four
 - Frogger
-- Memory Game
-- Space Invaders
-- Tic Tac Toe
 - Whac-a-mole Game
 <!-- Continue... -->
-- Snake Game (In Progress)
+<!-- - Snake Game (In Progress) -->
 
 ## Simple Projects
 - Clock
