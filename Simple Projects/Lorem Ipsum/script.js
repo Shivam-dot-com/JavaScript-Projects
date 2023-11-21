@@ -41,3 +41,10 @@ form.addEventListener("submit", (e) => {
 });
 
 // *Note : Default behaviour of submit button is submit to server, e.preventDefault() is useful here
+
+
+// -----------------------------------------------------
+/* TODO 
+- Need to Add Copy to clipboard functionality
+- Add Condition what if Amount is Less than One
+*/
