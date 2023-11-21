@@ -18,7 +18,7 @@ buttons[0].style.backgroundColor = "white";
 
 const resetBg = () => {
     buttons.forEach((button) => {
-        button.style.backgroundColor = `transparent`; //? Making it Transparent
+        button.style.backgroundColor = `transparent`; //? ⚒️ Making it Transparent
     });
 };
 
