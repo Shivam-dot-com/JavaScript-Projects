@@ -35,7 +35,7 @@ let tempMonth = tempDate.getMonth();
 let tempDay = tempDate.getDate();
 
 // const futureDate = new Date(2023, 04, 24, 15, 30, 00);
-const futureDate = new Date(tempYear, tempMonth, tempDay + 10, 11, 30, 00);
+const futureDate = new Date(tempYear, tempMonth, tempDay + 10, 11, 30, 0);
 
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours();

@@ -3,7 +3,7 @@ const questions = document.querySelectorAll(".question");
 questions.forEach((question) => {
     // console.log(`🚀 ~ file: script.js:5 ~ questions.forEach ~ question:`, question)
     const btn = question.querySelector(".question-btn");
-    //! Observe with querySelector we have used question
+    //! 👁️ Observe with querySelector we have used question
     // console.log(`🚀 ~ file: script.js:6 ~ questions.forEach ~ btn:`, btn)
     btn.addEventListener("click", () => {
         // To close opened when other question's button is clicked

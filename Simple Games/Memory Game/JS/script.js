@@ -92,7 +92,7 @@ function checkMatch() {
         cards[optionOneId].setAttribute("src", "Images/Find-Out.png");
         cards[optionTwoId].setAttribute("src", "Images/Find-Out.png");
     }
-    resultDisplay.textContent = `: ${cardsWon.length}`;
+    resultDisplay.textContent = `Score : ${cardsWon.length}`;
     cardsChosen = [];
     cardsChosenIds = [];
     if (cardsWon.length == cardArray.length / 2) {
